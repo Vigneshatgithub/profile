@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Vignesh - Profile
+</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="dstyle.css" />
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<!--<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+idleTime=0; //set idletime to zero
+$(document).ready(function(){
+var ivl;
+//changeSpanTxt("Howdy! Please keep the mouse idle over the v-card for 2 seconds");
+$("div#transp").mouseover(function(){
+ivl=setInterval("incrementTime()",1000); // setinterval calls the function incrementTime every 1 second
+//$("span#inp1").text("mouse inside image"); // changes span element text , not seen as will be overriden by mousemove 
+//changeSpanTxt("Yup! just 2 seconds idle");
+});
+
+$("div#transp").mousemove(function(e){                  
+idleTime=0;											  // reset idletime to zero if there is mousemove over img with id 'img1'
+//$("span#inp1").text("mouse movement inside image");   // changes span element text
+//changeSpanTxt("mouse movement inside image");
+});
+
+$("div#transp").mouseout(function(e){	
+clearInterval(ivl);					                 // clearning the interval timer
+//$("span#inp1").text("mouse outside image");          // changes span element text
+//changeSpanTxt("mouse outside image");
+});
+
+});
+
+/*
+$("img#img1").mouseout(function(e){						
+$("span#inp1").text("");
+});*/
+function incrementTime()
+{
+idleTime=idleTime+1;								  // increment idletime every 1 second if there is no mousemove identified over image						
+	if(idleTime>2)									  // if increment value is gt 2 (idle for 2 sec), 
+	{
+	//$("span#inp1").text("mouse is IDLE inside image");					  // display text in span element and applied some style!
+	//changeSpanTxt("mouse is IDLE inside image");	
+	//alert("do something, mouse is idle");
+	//$("span#inp1").css({"background-color":"#FFFF00","color":"#009933","font-weight":"bold"});
+	$("div#contactme").css("visibility","visible");
+	$("div#portfolio").css("visibility","visible");
+	$("div#links").css("visibility","visible");
+	changeSpanTxt("Thank you!");
+	clearInterval(ivl);
+	}
+}
+
+function changeSpanTxt(txt)                          
+{
+$("p#inp1").text(txt);
+}
+</script>
+</head>
+<body id="mypage">
+<div id="wrapme">
+<div id="region1">
+<div id="transp">
+
+<h1 class="abt-content">Vignesh Venkat</h1>
+<h2 class="abt-content">web front-end enthusiast</h2><br/>
+<p class="abt-content">
+software engineer by mistake.<br/>
+decided to hide the "mistake" by building interest on web development.<br/>
+enthusiasm is available in abundance but scattered on different plates<br/>
+</p>
+</div>
+
+<div id="contactme">
+<h3 class="comm">Call - +91 9581044455</h3>
+<h3 class="comm">Email  - venkat.vignesh [at] gmail.com</h3>
+</div>
+</div>
+<div id="portfolio">
+
+<ul class="thumbnails">
+<li><h3>Portfolio</h3>
+</li>
+<a href="http://flipmy.co.in" target="_blank">
+<li class="span3">
+<div class="thumbnail">
+<h5>Flip my coin</h5>
+<p>an attempt to simulate coin toss </p>
+</div>
+</li>
+</a>
+<a href="http://www.ingeye.com" target="_blank">
+<li class="span3">
+<div class="thumbnail">
+<h5>Ingeye</h5>
+<p>to achieve data search from the social networking websites</p>
+</div>
+</li>
+</a>
+<a href="http://ziz.ingeye.com" target="_blank">
+<li class="span3">
+<div class="thumbnail">
+<h5>Ziz</h5>
+<p>a website to spread our social work</p>
+</div>
+</li>
+</a>
+<a href="http://search.ingeye.com" target="_blank">
+<li class="span3">
+<div class="thumbnail">
+<h5>Local business search</h5>
+<p>to filter local business from music classes, tuitions, dhobi etc</p>
+</div>
+</li>
+</a>
+<a href="http://vignesh.flipmy.co.in/layout.html" target="_blank">
+<li class="span3">
+<div class="thumbnail">
+<h5>Flexible layout?</h5>
+<p>is this page responsive to different screen size? need to check..</p>
+</div>
+</li>
+</a>
+</ul>
+</div>
+
+<div id="links">
+<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/vigneshvenkat" data-format="hover" data-text="Vignesh Venkatachalam" data-related="false"></script>
+<a href="https://github.com/Vigneshatgithub" target="_blank">@Github</a>
+</div>
+
+<div id="question">
+<p id='inp1'>Howdy! Please keep the mouse idle over the v-card for 2 seconds</p>
+</div>
+
+</div>
+</body>
+</html>

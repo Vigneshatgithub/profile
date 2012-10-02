@@ -1,0 +1,156 @@
+body#mypage
+{
+background-color:#F0F0F5; /* #E0E0EB #FFFFC2  #CCFFFF*/
+}
+div#wrapme
+{
+margin:0 auto;
+width:95%;
+
+}
+div#transp
+{
+width:35%;
+margin-top:6.25em;
+background-color:#1A1A1A; /*  #334C4C*/
+opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+padding:10px;
+-moz-box-shadow:15px 10px 10px #888888; /* Firefox 3.6 and earlier */
+box-shadow: 15px 10px 10px #888888;
+border:1px solid;
+}
+div#transp:hover
+{
+-moz-box-shadow:0.3em 0.3em 0.3em #888888; /* Firefox 3.6 and earlier */
+box-shadow: 0.3em 0.3em 0.3em #888888;
+}
+div#region1
+{
+width:95%;
+}
+div#contactme
+{
+width:25%;
+}
+div#transp,div#contactme
+{
+display:inline-block;
+}
+
+h1.abt-content
+{
+color:#E6E6E6; /*  #E6E6E6*/
+}
+h2.abt-content
+{
+color:#0066FF;
+}
+p.abt-content
+{
+color:#66FF33;
+}
+div#portfolio
+{
+margin-left:9.375em;
+margin-top:3.125em;
+}
+div#contactme
+{
+margin-left:1.8em;
+}
+h3.comm
+{
+font-family:"Comic Sans MS";
+color:#334C4C;
+}
+h3.comm:hover
+{
+font-size:150%;
+color:#006699;
+}
+.thumbnail:hover
+{
+background-color:#A3E0FF;
+}
+
+@media (min-width: 1520px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+	html {
+		font-size: 10px;
+	}
+}
+	
+@media (max-width: 1160px) {
+	html {
+		font-size: 9px;
+	}
+}
+	
+@media (max-width: 1040px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 920px) {
+	html {
+		font-size: 7px;
+	}
+}
+	
+@media (max-width: 800px) {
+	html {
+		font-size: 6px;
+	}
+}
+	
+@media (max-width: 680px) {
+	html {
+		font-size: 5px;
+	}
+}
+	
+@media (max-width: 560px) {
+	html {
+		font-size: 4px;
+	}
+}
+	
+@media (max-width: 440px) {
+	html {
+		font-size: 3px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 3px;
+	}
+}
+
+div#contactme,div#portfolio,div#links
+{
+visibility:hidden;
+}
+
+div#question
+{
+position:fixed;
+top:0em;
+right:0em;
+width:10%;
+color:green;
+}

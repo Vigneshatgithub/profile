@@ -1,0 +1,189 @@
+html,body,div#wrapme
+{
+height:100%;
+min-height:100%;
+}
+div#wrapme
+{
+margin:0 auto;
+width:90%;
+}
+div#header
+{
+position:relative;
+background-color:#E8F2F2;
+}
+span.header-group-left
+{
+display:block;
+cursor:pointer;
+max-width:25%;
+}
+
+span#header-main
+{
+font-size:2.5em;
+font-weight:bold;
+color:#33CCCC;
+}
+span#header-sub
+{
+margin-left:0.5em;
+}
+
+ul
+{
+list-style-type: none;
+}
+ul > li
+{
+font-weight:bold;
+margin:0.2em;
+}
+ul#menu-top
+{
+position:absolute;
+bottom:0em;
+right:0em;
+}
+ul#menu-top li
+{
+display:inline;
+}
+ul#menu-top li:after
+{
+content:' |'
+}
+ul#menu-top li:last-of-type:after
+{
+content:''
+}
+a
+{
+text-decoration:none;
+color:#336699;
+}
+a:hover
+{
+font-size:120%;
+}
+img#simg
+{
+float:left;
+max-width:30%;
+max-height:30%;
+}
+hr#content-break
+{
+clear:both;
+}
+div#navigation,div#stay-in-touch
+{
+float:left;
+}
+div#site-search
+{
+float:right;
+margin-top:0.5em;
+}
+span#read-more
+{
+float:right;
+background-color:black;
+color:white;
+margin:0.2em;
+cursor:pointer;
+}
+/*
+span#read-more:hover
+{
+background-color:white;
+color:black;
+cursor:pointer;
+}*/
+
+li.footer-headings
+{
+color:#71C68D;
+}
+p
+{
+text-align:justify;
+}
+input#hit-search
+{
+background:url(//vignesh.flipmy.co.in/search-icon.png) right center no-repeat;
+}
+div#content
+{
+position:relative;
+padding-bottom:5em;
+}
+
+/*media queries*/
+@media (min-width: 1520px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+	html {
+		font-size: 16px;
+	}
+}
+	
+@media (max-width: 1160px) {
+	html {
+		font-size: 15px;
+	}
+}
+	
+@media (max-width: 1040px) {
+	html {
+		font-size: 14px;
+	}
+}
+	
+@media (max-width: 920px) {
+	html {
+		font-size: 13px;
+	}
+}
+	
+@media (max-width: 800px) {
+	html {
+		font-size: 12px;
+	}
+}
+	
+@media (max-width: 680px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 560px) {
+	html {
+		font-size: 6px;
+	}
+}
+	
+@media (max-width: 440px) {
+	html {
+		font-size: 5px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 4px;
+	}
+}

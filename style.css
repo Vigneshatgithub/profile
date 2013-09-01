@@ -1,3 +1,11 @@
+.content-new
+{
+font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+font-weight: 400;
+font-size: 22px;
+line-height: 1.45;
+}
+
 html,body,div#wrapme
 {
 height:100%;

@@ -10,7 +10,7 @@ width:95%;
 }
 div#transp
 {
-width:35%;
+width:30em;
 margin-top:6.25em;
 background-color:#1A1A1A; /*  #334C4C*/
 opacity:0.6;
@@ -73,79 +73,6 @@ color:#006699;
 {
 background-color:#A3E0FF;
 }
-
-@media (min-width: 1520px) {
-	html {
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 1400px) {
-	html {
-		font-size: 11px;
-	}
-}
-
-/* target screen width  */
-@media (max-width: 1280px) {
-	html {
-		font-size: 10px;
-	}
-}
-	
-@media (max-width: 1160px) {
-	html {
-		font-size: 9px;
-	}
-}
-	
-@media (max-width: 1040px) {
-	html {
-		font-size: 8px;
-	}
-}
-	
-@media (max-width: 920px) {
-	html {
-		font-size: 7px;
-	}
-}
-	
-@media (max-width: 800px) {
-	html {
-		font-size: 6px;
-	}
-}
-	
-@media (max-width: 680px) {
-	html {
-		font-size: 5px;
-	}
-}
-	
-@media (max-width: 560px) {
-	html {
-		font-size: 4px;
-	}
-}
-	
-@media (max-width: 440px) {
-	html {
-		font-size: 3px;
-	}
-}
-
-@media (max-width: 320px) {
-	html {
-		font-size: 3px;
-	}
-}
-
-div#contactme,div#portfolio,div#links
-{
-visibility:hidden;
-}
-
 div#question
 {
 position:fixed;
@@ -153,4 +80,19 @@ top:0em;
 right:0em;
 width:10%;
 color:green;
+}
+li.space1
+{
+margin:0.2em;
+}
+
+
+
+div#contactme,div#portfolio,div#links
+{
+visibility:hidden;
+}
+span.addnl
+{
+margin:1em;
 }
